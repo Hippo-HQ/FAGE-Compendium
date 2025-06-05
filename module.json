@@ -1,0 +1,85 @@
+{
+  "id": "fantasy-age-2nd-edition",
+  "title": "Fantasy AGE 2nd Edition",
+  "description": "The unofficial compendium for Fantasy AGE 2nd Edition",
+  "version": "1.0",
+  "compatibility": {
+    "minimum": "0.6.0",
+    "verified": "12"
+  },
+  "authors": [
+    {
+      "name": "HippoHQ",
+      "flags": {}
+    }
+  ],
+  "packs": [
+    {
+      "name": "adversaries",
+      "label": "Adversaries",
+      "path": "packs/adversaries",
+      "type": "Actor",
+      "system": "age-system",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "character-options",
+      "label": "Character Options",
+      "path": "packs/character-options",
+      "type": "Item",
+      "system": "age-system",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "rando-rolls",
+      "label": "Rando Rolls",
+      "path": "packs/rando-rolls",
+      "type": "RollTable",
+      "system": "age-system",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "fantasy-age-2e-compendium",
+      "label": "Fantasy AGE 2e Compendium",
+      "path": "packs/fantasy-age-2e-compendium",
+      "type": "JournalEntry",
+      "system": "age-system",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Fantasy AGE 2nd Edition",
+      "sorting": "m",
+      "color": "#640f78",
+      "packs": [
+        "fantasy-age-2e-compendium",
+        "character-options",
+        "Adversaries",
+        "rando-rolls"
+      ],
+      "folders": []
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "age-system",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  }
+}
